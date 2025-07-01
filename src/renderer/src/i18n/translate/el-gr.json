@@ -43,6 +43,9 @@
       },
       "export": {
         "agent": "Εξαγωγή υποκειμένου"
+      },
+      "settings": {
+        "title": "Ρύθμιση Αντικειμένου"
       }
     },
     "assistants": {
@@ -89,7 +92,26 @@
       "settings.knowledge_base.recognition.off": "Υποχρεωτική αναζήτηση",
       "settings.knowledge_base.recognition.on": "Αναγνώριση πρόθεσης",
       "settings.reasoning_effort.default": "Προεπιλογή",
-      "settings.more": "Ρυθμίσεις Βοηθού"
+      "settings.more": "Ρυθμίσεις Βοηθού",
+      "list": {
+        "showByList": "Προβολή με λίστα",
+        "showByTags": "Προβολή με ετικέτες"
+      },
+      "tags": {
+        "settings": {
+          "title": "Ρύθμιση ετικετών"
+        },
+        "none": "Κανένας τίτλος",
+        "manage": "Διαχείριση τιτλού",
+        "add": "Προσθήκη τιτλού",
+        "untagged": "Ανομαδικός",
+        "modify": "Επεξεργασία τιτλού",
+        "delete": "Διαγραφή τιτλού",
+        "deleteConfirm": "Είστε σίγουροι ότι θέλετε να διαγράψετε αυτόν τον τίτλο;"
+      },
+      "settings.tool_use_mode": "Τρόπος χρήσης εργαλείου",
+      "settings.tool_use_mode.function": "Συνάρτηση",
+      "settings.tool_use_mode.prompt": "Προσομοίωση"
     },
     "auth": {
       "error": "Αποτυχία στην αυτόματη πήγαινη των κλειδιών, παρακαλείστε να το κάνετε χειροκίνητα",
@@ -119,7 +141,10 @@
       "manage": "χειριστείτε",
       "select_model": "επιλογή μοντέλου",
       "show.all": "δείξτε όλα",
-      "update_available": "Υπάρχει διαθέσιμη ενημέρωση"
+      "update_available": "Υπάρχει διαθέσιμη ενημέρωση",
+      "includes_user_questions": "Περιλαμβάνει ερωτήσεις χρήστη",
+      "case_sensitive": "Προσοχή στο πεζό/κεφαλαίο",
+      "whole_word": "Ακριβής ταυτότητα λέξης"
     },
     "chat": {
       "add.assistant.title": "Προσθήκη βοηθού",
@@ -287,13 +312,59 @@
       "topics.export.siyuan": "Εξαγωγή στο Siyuan Notepad",
       "topics.export.wait_for_title_naming": "Γενικευμένος τίτλος...",
       "topics.export.title_naming_success": "Ο τίτλος δημιουργήθηκε επιτυχώς",
-      "topics.export.title_naming_failed": "Η δημιουργία του τίτλου απέτυχε, θα χρησιμοποιηθεί ο προεπιλεγμένος τίτλος"
+      "topics.export.title_naming_failed": "Η δημιουργία του τίτλου απέτυχε, θα χρησιμοποιηθεί ο προεπιλεγμένος τίτλος",
+      "settings.code_editor": {
+        "title": "Επεξεργαστής Κώδικα",
+        "highlight_active_line": "Ενεργοποίηση της ενεργής γραμμής",
+        "fold_gutter": "Περιπλοκή χειριστήριο",
+        "autocompletion": "Αυτόματη ολοκλήρωση",
+        "keymap": "Συντόμευση πληκτρολογίου"
+      },
+      "settings.code_execution": {
+        "title": "Εκτέλεση κώδικα",
+        "tip": "Στη γραμμή εργαλείων του εκτελέσιμου κώδικα θα εμφανιστεί η κουμπία 'Εκτέλεση', παρατηρήστε να μην εκτελείτε επικίνδυνο κώδικα!",
+        "timeout_minutes": "Χρόνος υπερχρονισμού",
+        "timeout_minutes.tip": "Χρόνος υπερχρονισμού εκτέλεσης κώδικα (λεπτά)"
+      },
+      "input.file_error": "Σφάλμα επεξεργασίας αρχείου",
+      "input.thinking.mode.tokens.tip": "Ρύθμιση του αριθμού των Token για τη σκέψη",
+      "input.web_search.settings": "Ρυθμίσεις αναζήτησης στο διαδίκτυο",
+      "input.tools.collapse": "Σύμπτυξη",
+      "input.tools.expand": "Επέκταση",
+      "input.tools.collapse_in": "Συμπεριληφθείτε στη σύμπτυξη",
+      "input.tools.collapse_out": "Αφαιρεθείτε από τη σύμπτυξη",
+      "multiple.select": "Πολλαπλή επιλογή",
+      "multiple.select.empty": "Δεν επιλέχθηκε καμία μήνυμα",
+      "settings.code.title": "Ρυθμίσεις κώδικα"
     },
     "code_block": {
       "collapse": "συμπεριληφθείς",
-      "disable_wrap": "ακύρωση αλλαγής γραμμής",
-      "enable_wrap": "άλλαγη γραμμής",
-      "expand": "επιλογή"
+      "expand": "επιλογή",
+      "copy.failed": "Αποτυχία αντιγραφής",
+      "copy.source": "Αντιγραφή πηγαίου κώδικα",
+      "copy.success": "Η αντιγραφή έγινε με επιτυχία",
+      "copy": "Αντιγραφή",
+      "download.failed.network": "Αποτυχία λήψης, παρακαλώ ελέγξτε το δίκτυο",
+      "download.png": "Λήψη PNG",
+      "download.source": "Λήψη πηγαίου κώδικα",
+      "download.svg": "Λήψη SVG",
+      "download": "Λήψη",
+      "edit.save.failed.message_not_found": "Αποτυχία αποθήκευσης, δεν βρέθηκε το αντίστοιχο μήνυμα",
+      "edit.save.failed": "Αποτυχία αποθήκευσης",
+      "edit.save.success": "Αποθηκεύτηκε",
+      "edit.save": "Αποθήκευση αλλαγών",
+      "edit": "Επεξεργασία",
+      "more": "Περισσότερα",
+      "preview.copy.image": "Αντιγραφή ως εικόνα",
+      "preview.source": "Προβολή πηγαίου κώδικα",
+      "preview.zoom_in": "Μεγέθυνση",
+      "preview.zoom_out": "Σμίκρυνση",
+      "preview": "Προεπισκόπηση",
+      "run": "Εκτέλεση κώδικα",
+      "split.restore": "Αναίρεση διαίρεσης προβολής",
+      "split": "Διαίρεση προβολής",
+      "wrap.off": "Απενεργοποίηση αλλαγής γραμμής",
+      "wrap.on": "Ενεργοποίηση αλλαγής γραμμής"
     },
     "common": {
       "add": "Προσθέστε",
@@ -347,7 +418,11 @@
       "inspect": "Επιθεώρηση",
       "collapse": "Σύμπτυξη",
       "loading": "Φόρτωση...",
-      "reasoning_content": "Έχει σκεφτεί πολύ καλά"
+      "reasoning_content": "Έχει σκεφτεί πολύ καλά",
+      "selectedMessages": "Επιλεχθήκαν {{count}} μηνύματα",
+      "selectedItems": "Επιλεχθήκαν {{count}} στοιχεία",
+      "success": "Επιτυχία",
+      "no_results": "Χωρίς αποτελέσματα"
     },
     "docs": {
       "title": "Βοήθεια"
@@ -483,7 +558,6 @@
       "threshold_tooltip": "Χρησιμοποιείται για τη μετρηση της σχέσης συνάφειας μεταξύ της ερώτησης του χρήστη και των περιεχομένων της βάσης γνώσεων (0-1)",
       "title": "Βάση γνώσεων",
       "topN": "Ποσότητα αποτελεσμάτων που επιστρέφονται",
-      "topN__too_large_or_small": "Η ποσότητα των αποτελεσμάτων που επιστρέφονται δεν μπορεί να είναι μεγαλύτερη από 100 ή μικρότερη από 1",
       "topN_placeholder": "Δεν έχει ρυθμιστεί",
       "topN_tooltip": "Η ποσότητα των επιστρεφόμενων αποτελεσμάτων που συνάφονται, όσο μεγαλύτερη είναι η τιμή, τόσο περισσότερα αποτελέσματα συνδέονται, αλλά και οι καταναλωτικοί Token επειδή περισσότερα",
       "url_added": "Η διεύθυνση προστέθηκε",
@@ -496,7 +570,8 @@
       "dimensions_error_invalid": "Παρακαλώ εισάγετε μέγεθος διαστάσεων ενσωμάτωσης",
       "dimensions_size_too_large": "Οι διαστάσεις ενσωμάτωσης δεν μπορούν να υπερβούν το όριο περιεχομένου του μοντέλου ({{max_context}})",
       "dimensions_set_right": "⚠️ Βεβαιωθείτε ότι το μοντέλο υποστηρίζει το καθορισμένο μέγεθος διαστάσεων ενσωμάτωσης",
-      "dimensions_default": "Το μοντέλο θα χρησιμοποιήσει τις προεπιλεγμένες διαστάσεις ενσωμάτωσης"
+      "dimensions_default": "Το μοντέλο θα χρησιμοποιήσει τις προεπιλεγμένες διαστάσεις ενσωμάτωσης",
+      "topN_too_large_or_small": "Ο αριθμός των αποτελεσμάτων δεν μπορεί να είναι μεγαλύτερος από 30 ή μικρότερος από 1"
     },
     "languages": {
       "arabic": "Αραβικά",
@@ -510,28 +585,20 @@
       "korean": "Κορεάτικά",
       "portuguese": "Πορτογαλικά",
       "russian": "Ρωσικά",
-      "spanish": "Ισπανικά"
+      "spanish": "Ισπανικά",
+      "polish": "Πολωνικά",
+      "turkish": "Τουρκικά",
+      "thai": "Ταϊλανδικά",
+      "vietnamese": "Βιετναμέζικα",
+      "indonesian": "Ινδονησιανικά",
+      "urdu": "Ούρντο",
+      "malay": "Μαλαϊσιανικά"
     },
     "lmstudio": {
       "keep_alive_time.description": "Χρόνος που ο μοντέλος διατηρείται στη μνήμη μετά από το συνομιλητή (προεπιλογή: 5 λεπτά)",
       "keep_alive_time.placeholder": "λεπτά",
       "keep_alive_time.title": "Χρόνος διατήρησης ενεργοποίησης",
       "title": "LM Studio"
-    },
-    "mermaid": {
-      "download": {
-        "png": "Λήψη PNG",
-        "svg": "Λήψη SVG"
-      },
-      "resize": {
-        "zoom-in": "Μεγάλυνση",
-        "zoom-out": "Σμικρύνση"
-      },
-      "tabs": {
-        "preview": "Προεπισκόπηση",
-        "source": "Κώδικας πηγής"
-      },
-      "title": "Χαρτί Mermaid"
     },
     "message": {
       "api.check.model.title": "Επιλέξτε το μοντέλο που θα ελέγξετε",
@@ -573,7 +640,6 @@
       "group.delete.content": "Η διαγραφή της ομάδας θα διαγράψει τις ερωτήσεις των χρηστών και όλες τις απαντήσεις του αστρόναυτη",
       "group.delete.title": "Διαγραφή ομάδας",
       "ignore.knowledge.base": "Λειτουργία σύνδεσης ενεργοποιημένη, αγνοείται η βάση γνώσεων",
-      "info.notion.block_reach_limit": "Η συζήτηση είναι πολύ μεγάλη, εξάγεται σε περιοχές στο Notion",
       "loading.notion.exporting_progress": "Εξάγεται στο Notion ({{current}}/{{total}})...",
       "loading.notion.preparing": "Ετοιμάζεται η εξαγωγή στο Notion...",
       "mention.title": "Εναλλαγή απάντησης αστρόναυτη",
@@ -631,7 +697,20 @@
       "warn.yuque.exporting": "Γίνεται έκθεση Yuque· μην ξαναζητήσετε την έκθεση!",
       "warn.siyuan.exporting": "Γίνεται εξαγωγή στις σημειώσεις Siyuan· μην ξαναζητήσετε την έκθεση!",
       "download.success": "Λήψη ολοκληρώθηκε",
-      "download.failed": "Αποτυχία λήψης"
+      "download.failed": "Αποτυχία λήψης",
+      "websearch": {
+        "rag": "Εκτελείται η RAG...",
+        "rag_complete": "Διατηρούνται {{countBefore}} αποτελέσματα από {{countAfter}}...",
+        "rag_failed": "Η RAG απέτυχε, επιστρέφεται κενό αποτέλεσμα...",
+        "cutoff": "Γίνεται κοπή του περιεχομένου αναζήτησης...",
+        "fetch_complete": "Ολοκληρώθηκαν {{count}} αναζητήσεις..."
+      },
+      "delete.confirm.title": "Επιβεβαίωση διαγραφής",
+      "delete.confirm.content": "Είστε σίγουροι ότι θέλετε να διαγράψετε τις {{count}} επιλεγμένες μηνύματα;",
+      "delete.failed": "Η διαγραφή απέτυχε",
+      "delete.success": "Η διαγραφή ήταν επιτυχής",
+      "empty_url": "Δεν μπορεί να κατεβεί το εικονίδιο, πιθανόν το μήνυμα περιλαμβάνει ευαίσθητο περιεχόμενο ή παράνομα λόγια",
+      "error.fetchTopicName": "Αποτυχία ονοματοδοσίας θέματος"
     },
     "minapp": {
       "title": "Μικρόπρογραμμα",
@@ -643,7 +722,9 @@
         "openExternal": "Άνοιγμα στον περιηγητή",
         "rightclick_copyurl": "Αντιγραφή URL με δεξί κλικ",
         "open_link_external_on": "Τρέχον: Άνοιγμα συνδέσμου στον περιηγητή",
-        "open_link_external_off": "Τρέχον: Άνοιγμα συνδέσμου χρησιμοποιώντας το προεπιλεγμένο παράθυρο"
+        "open_link_external_off": "Τρέχον: Άνοιγμα συνδέσμου χρησιμοποιώντας το προεπιλεγμένο παράθυρο",
+        "goBack": "Πίσω",
+        "goForward": "Μπροστά"
       },
       "sidebar": {
         "add": {
@@ -681,7 +762,8 @@
         "esc": "πατήστε ESC για {{action}}",
         "esc_back": "Επιστροφή",
         "esc_close": "Κλείσιμο παραθύρου",
-        "backspace_clear": "Πατήστε το πλήκτρο Backspace για να κάνετε εκκαθάριση"
+        "backspace_clear": "Πατήστε το πλήκτρο Backspace για να κάνετε εκκαθάριση",
+        "esc_pause": "Παύση"
       },
       "input": {
         "placeholder": {
@@ -729,7 +811,20 @@
         "websearch": "δικτύωση"
       },
       "rerank_model_not_support_provider": "Ο επαναξιολογητικός μοντέλος δεν υποστηρίζει αυτόν τον πάροχο ({{provider}})",
-      "enable_tool_use": "Ενεργοποίηση κλήσης εργαλείου"
+      "enable_tool_use": "Ενεργοποίηση κλήσης εργαλείου",
+      "price": {
+        "cost": "Κόστος",
+        "currency": "Νόμισμα",
+        "custom": "Προσαρμοσμένο",
+        "custom_currency": "Προσαρμοσμένο νόμισμα",
+        "custom_currency_placeholder": "Εισάγετε προσαρμοσμένο νόμισμα",
+        "input": "Εισαγωγή τιμής",
+        "million_tokens": "Εκατομμύριο Tokens",
+        "output": "Έξοδος τιμής",
+        "price": "Τιμή"
+      },
+      "embedding_dimensions": "Διαστάσεις εμφύτευσης",
+      "reasoning": "Συλλογισμός"
     },
     "navbar": {
       "expand": "Επισκευή διαλόγου",
@@ -774,7 +869,10 @@
         "seed_tip": "Ελέγχει την τυχαιότητα της δημιουργίας εικόνας, χρησιμοποιείται για να επαναληφθεί το ίδιο αποτέλεσμα",
         "negative_prompt_tip": "Περιγράψτε στοιχεία που δεν θέλετε να εμφανίζονται στην εικόνα, υποστηρίζεται μόνο στις εκδόσεις V_1, V_1_TURBO, V_2 και V_2_TURBO",
         "magic_prompt_option_tip": "Έξυπνη βελτιστοποίηση της προτροπής για βελτίωση των αποτελεσμάτων",
-        "style_type_tip": "Στυλ δημιουργίας εικόνας, ισχύει μόνο για την έκδοση V_2 και μεταγενέστερες"
+        "style_type_tip": "Στυλ δημιουργίας εικόνας, ισχύει μόνο για την έκδοση V_2 και μεταγενέστερες",
+        "rendering_speed_tip": "Διαχειριστείτε την ισορροπία της ταχύτητας και της ποιότητας της απεικόνισης, ισχύει μόνο για την έκδοση V_3",
+        "person_generation": "Παραγωγή Ατόμου",
+        "person_generation_tip": "Επιτρέπει στο μοντέλο να παράγει εικόνες ατόμων"
       },
       "edit": {
         "image_file": "Επεξεργασμένη εικόνα",
@@ -782,7 +880,8 @@
         "number_images_tip": "Αριθμός των αποτελεσμάτων επεξεργασίας που θα δημιουργηθούν",
         "style_type_tip": "Ο τύπος στυλ για την επεξεργασμένη εικόνα, ισχύει μόνο για την έκδοση V_2 και νεότερες",
         "seed_tip": "Έλεγχος της τυχαιότητας στα αποτελέσματα επεξεργασίας",
-        "magic_prompt_option_tip": "Έξυπνη βελτιστοποίηση της πρότασης επεξεργασίας"
+        "magic_prompt_option_tip": "Έξυπνη βελτιστοποίηση της πρότασης επεξεργασίας",
+        "rendering_speed_tip": "Διαχειρίστε την ισορροπία της ταχύτητας αναπαραγωγής και της ποιότητας, ισχύει μόνο για την έκδοση V_3"
       },
       "remix": {
         "model_tip": "Επιλέξτε την έκδοση του AI μοντέλου για χρήση σε remix",
@@ -793,7 +892,8 @@
         "seed_tip": "Έλεγχος τυχαιότητας των αποτελεσμάτων remix",
         "style_type_tip": "Στυλ εικόνας μετά το remix, διαθέσιμο μόνο για εκδόσεις V_2 και νεότερες",
         "negative_prompt_tip": "Περιγράψτε στοιχεία που δεν θέλετε να εμφανιστούν στο αποτέλεσμα remix",
-        "magic_prompt_option_tip": "Έξυπνη βελτιστοποίηση της προτροπής remix"
+        "magic_prompt_option_tip": "Έξυπνη βελτιστοποίηση της προτροπής remix",
+        "rendering_speed_tip": "Διαχειριστείτε την ισορροπία μεταξύ της ταχύτητας απεικόνισης και της ποιότητας, ισχύει μόνο για την έκδοση V_3"
       },
       "upscale": {
         "image_file": "Εικόνα που χρειάζεται μεγέθυνση",
@@ -813,19 +913,72 @@
       "prompt_placeholder_edit": "Εισάγετε την περιγραφή της εικόνας σας, χρησιμοποιήστε διπλά εισαγωγικά \"\" για κείμενο",
       "proxy_required": "Αυτή τη στιγμή χρειάζεται να ενεργοποιήσετε τον μεσολαβητή (proxy) για να δείτε τις δημιουργημένες εικόνες. Στο μέλλον θα υποστηρίζεται η άμεση σύνδεση στην Κίνα",
       "image_file_required": "Παρακαλώ ανεβάστε πρώτα μια εικόνα",
-      "image_file_retry": "Παρακαλώ ανεβάστε ξανά την εικόνα"
-    },
-    "plantuml": {
-      "download": {
-        "failed": "Η κατέβαση απέτυχε, παρακαλούμε ελέγξτε το δίκτυο",
-        "png": "Κατέβασμα PNG",
-        "svg": "Κατέβασμα SVG"
+      "image_file_retry": "Παρακαλώ ανεβάστε ξανά την εικόνα",
+      "style_types": {
+        "auto": "Αυτόματο",
+        "general": "Γενικό",
+        "realistic": "Πραγματικό",
+        "design": "Σχεδίαση",
+        "3d": "3D",
+        "anime": "Άνιμε"
       },
-      "tabs": {
-        "preview": "προεπισκόπηση",
-        "source": "πηγαίος κώδικας"
+      "rendering_speeds": {
+        "default": "Προεπιλογή",
+        "turbo": "Γρήγορος",
+        "quality": "Υψηλής Ποιότητας"
       },
-      "title": "Σχέδιο PlantUML"
+      "quality_options": {
+        "auto": "Αυτόματο",
+        "low": "Χαμηλό",
+        "medium": "Μεσαίο",
+        "high": "Υψηλό"
+      },
+      "moderation_options": {
+        "auto": "Αυτόματο",
+        "low": "Χαμηλό"
+      },
+      "background_options": {
+        "auto": "Αυτόματο",
+        "transparent": "Διαφανές",
+        "opaque": "Αδιαφανές"
+      },
+      "person_generation_options": {
+        "allow_all": "Να επιτρέπεται όλα",
+        "allow_adult": "Να επιτρέπεται ενήλικες",
+        "allow_none": "Δεν επιτρέπεται"
+      },
+      "aspect_ratios": {
+        "square": "Τετράγωνο",
+        "portrait": "Κάθετο",
+        "landscape": "Οριζόντιο"
+      },
+      "seed_desc_tip": "Το ίδιο σπόρι και το ίδιο πρότυπο μπορούν να παράγουν την ίδια εικόνα. Εάν το ρυθμίσετε σε -1, το κάθε παραγόμενο εικόνιο θα είναι διαφορετικό.",
+      "rendering_speed": "Ταχύτητα ανάλυσης",
+      "paint_course": "Οδηγίες",
+      "prompt_placeholder_en": "Εισαγάγετε την περιγραφή της εικόνας στα «αγγλικά», το Imagen υποστηρίζει προσωρινά μόνο αγγλικά πρότυπα",
+      "image_placeholder": "Δεν υπάρχει εικόνα",
+      "image_retry": "Δοκιμάστε ξανά",
+      "translating": "Σε εξέλιξη η μετάφραση...",
+      "quality": "Ποιότητα",
+      "moderation": "Φροντίδα",
+      "background": "Παρασκήνιο",
+      "text_desc_required": "Παρακαλώ εισάγετε την περιγραφή της εικόνας",
+      "req_error_text": "Η εκτέλεση απέτυχε, παρακαλώ δοκιμάστε ξανά. Αποφύγετε τα «πρότυπα πνευματικής ιδιοκτησίας» και τα «ευαίσθητα πρότυπα».",
+      "req_error_token": "Παρακαλώ ελέγξτε την έγκυρο του τόκεν",
+      "req_error_no_balance": "Παρακαλώ ελέγξτε την έγκυρο του τόκεν",
+      "image_handle_required": "Παρακαλώ φορτώστε πρώτα την εικόνα",
+      "auto_create_paint": "Αυτόματη δημιουργία εικόνας",
+      "auto_create_paint_tip": "Μετά την παραγωγή της εικόνας, θα δημιουργηθεί αυτόματα μια νέα εικόνα",
+      "select_model": "Επιλέξτε μοντέλο",
+      "input_parameters": "Εισαγωγή παραμέτρων",
+      "input_image": "Εισαγωγή εικόνας",
+      "generated_image": "Παραγμένη εικόνα",
+      "pricing": "Τιμολόγηση",
+      "model_and_pricing": "Μοντέλο και τιμολόγηση",
+      "per_image": "Ανά εικόνα",
+      "per_images": "Ανά εικόνα",
+      "required_field": "Υποχρεωτικό πεδίο",
+      "uploaded_input": "Φορτώθηκε το εισερχόμενο"
     },
     "prompts": {
       "explanation": "Με βοηθήστε να εξηγήσετε αυτό το όρισμα",
@@ -880,7 +1033,11 @@
       "zhinao": "360 Intelligent Brain",
       "zhipu": "Zhipu AI",
       "voyageai": "Voyage AI",
-      "qiniu": "Qiniu AI"
+      "qiniu": "Qiniu AI",
+      "tokenflux": "TokenFlux",
+      "302ai": "302.AI",
+      "lanyun": "Λάνυν Τεχνολογίες",
+      "vertexai": "Vertex AI"
     },
     "restore": {
       "confirm": "Είστε σίγουροι ότι θέλετε να επαναφέρετε τα δεδομένα;",
@@ -956,7 +1113,9 @@
           "token": "Κωδικός πρόσβασης Joplin",
           "token_placeholder": "Εισαγάγετε τον κωδικό πρόσβασης Joplin",
           "url": "URL υπηρεσίας περικοπής Joplin",
-          "url_placeholder": "http://127.0.0.1:41184/"
+          "url_placeholder": "http://127.0.0.1:41184/",
+          "export_reasoning.title": "Συμπεριλαμβάνει την αλυσίδα σκέψης κατά την εξαγωγή",
+          "export_reasoning.help": "Όταν είναι ενεργοποιημένο, η εξαγωγή στο Joplin θα περιλαμβάνει το περιεχόμενο της αλυσίδας σκέψης."
         },
         "markdown_export.force_dollar_math.help": "Κάνοντας το ενεργό, κατά την εξαγωγή Markdown, θα χρησιμοποιείται αναγκαστικά το $$ για να σημειώσετε την εξίσωση LaTeX. Νομίζετε: Αυτή η επιλογή θα επηρεάσει και όλες τις μεθόδους εξαγωγής μέσω Markdown, όπως το Notion, Yuyu κλπ.",
         "markdown_export.force_dollar_math.title": "Ανάγκη χρήσης $$ για να σημειώσετε την εξίσωση LaTeX",
@@ -969,8 +1128,6 @@
         "minute_interval_other": "{{count}} λεπτά",
         "notion.api_key": "Κλειδί Notion",
         "notion.api_key_placeholder": "Εισαγάγετε το κλειδί Notion",
-        "notion.auto_split": "Αυτόματη εκχώρηση σε σελίδες κατά την εξαγωγή συζητήσεων",
-        "notion.auto_split_tip": "Όταν η συζήτηση που θα εξαγάγετε είναι πολύ μεγάλη, θα εκχωρείται αυτόματα σε περισσότερες σελίδες στο Notion",
         "notion.check": {
           "button": "Έλεγχος",
           "empty_api_key": "Δεν έχει ρυθμιστεί η κλειδιά API",
@@ -984,9 +1141,6 @@
         "notion.help": "Έγχρωστη διαδρομή του Notion",
         "notion.page_name_key": "Όνομα πεδίου τίτλου σελίδας",
         "notion.page_name_key_placeholder": "Εισαγάγετε το όνομα του πεδίου τίτλου σελίδας, προεπιλογή: Name",
-        "notion.split_size": "Μέγεθος αυτόματης διαχωριστικής σελίδας",
-        "notion.split_size_help": "Οι χρήστες της δωρεάν έκδοσης του Notion προτείνεται να ορίσουν 90, οι υψηλότερες έκδοσεις προτείνονται να ορίσουν 24990, το προεπιλεγμένο είναι 90",
-        "notion.split_size_placeholder": "Εισαγάγετε τον περιορισμό μπλοκ κάθε σελίδας (προεπιλογή: 90)",
         "notion.title": "Ρυθμίσεις του Notion",
         "obsidian": {
           "title": "Ρύθμιση του Obsidian",
@@ -1019,8 +1173,6 @@
           "restore.confirm.content": "Η αποκατάσταση από το WebDAV θα επιβάλλει τα σημερινά δεδομένα. Θέλετε να συνεχίσετε;",
           "restore.confirm.title": "Υποβεβαίωση αποκατάστασης",
           "restore.content": "Η αποκατάσταση από το WebDAV θα επιβάλλει τα σημερινά δεδομένα. Θέλετε να συνεχίσετε;",
-          "restore.modal.select.placeholder": "Επιλέξτε το αρχείο αντιγράφου ασφαλείας για αποκατάσταση",
-          "restore.modal.title": "Αποκατάσταση από το WebDAV",
           "restore.title": "Αποκατάσταση από το WebDAV",
           "syncError": "Σφάλμα στην αντιγραφή ασφαλείας",
           "syncStatus": "Κατάσταση αντιγραφής ασφαλείας",
@@ -1073,7 +1225,8 @@
           "obsidian": "Εξαγωγή στο Obsidian",
           "siyuan": "Εξαγωγή στο Ση-Υάν",
           "joplin": "Εξαγωγή στο Joplin",
-          "docx": "Εξαγωγή σε Word"
+          "docx": "Εξαγωγή σε Word",
+          "plain_text": "Αντιγραφή ως απλό κείμενο"
         },
         "siyuan": {
           "check": {
@@ -1123,7 +1276,99 @@
         "divider.export_settings": "Ρυθμίσεις εξαγωγής",
         "divider.third_party": "Σύνδεση τρίτων",
         "message_title.use_topic_naming.title": "Δημιουργία τίτλων μηνυμάτων χρησιμοποιώντας μοντέλο ονομασίας θεμάτων",
-        "message_title.use_topic_naming.help": "Όταν είναι ενεργό, δημιουργεί τίτλους για τα μηνύματα που εξάγονται χρησιμοποιώντας μοντέλο ονομασίας θεμάτων. Αυτό επηρεάζει επίσης όλες τις μεθόδους εξαγωγής μέσω Markdown."
+        "message_title.use_topic_naming.help": "Όταν είναι ενεργό, δημιουργεί τίτλους για τα μηνύματα που εξάγονται χρησιμοποιώντας μοντέλο ονομασίας θεμάτων. Αυτό επηρεάζει επίσης όλες τις μεθόδους εξαγωγής μέσω Markdown.",
+        "s3": {
+          "title": "Αποθήκευση S3 αντίστοιχη",
+          "title.help": "Υπηρεσία αντικειμενικής αποθήκευσης που είναι συμβατή με την AWS S3 API, για παράδειγμα AWS S3, Cloudflare R2, Alibaba OSS, Tencent COS κ.λπ.",
+          "endpoint": "Διεύθυνση API",
+          "endpoint.placeholder": "https://s3.example.com",
+          "region": "Περιοχή",
+          "region.placeholder": "Περιοχή, π.χ. us-east-1",
+          "bucket": "Bucket",
+          "bucket.placeholder": "Bucket, π.χ. example",
+          "accessKeyId": "ID Κλειδιού Πρόσβασης",
+          "accessKeyId.placeholder": "ID Κλειδιού Πρόσβασης",
+          "secretAccessKey": "Κρυφό Κλειδί Πρόσβασης",
+          "secretAccessKey.placeholder": "Κρυφό Κλειδί Πρόσβασης",
+          "root": "Κατάλογος αντίγραφου ασφαλείας (προαιρετικό)",
+          "root.placeholder": "Π.χ. /cherry-studio",
+          "backup.operation": "Λειτουργία αντίγραφου ασφαλείας",
+          "backup.button": "Αντίγραφο ασφαλείας τώρα",
+          "backup.manager.button": "Διαχείριση αντιγράφων",
+          "backup.modal.title": "Αντίγραφο ασφαλείας S3",
+          "backup.modal.filename.placeholder": "Εισαγάγετε το όνομα του αρχείου αντίγραφου ασφαλείας",
+          "backup.success": "Η διαδικασία αντίγραφου ασφαλείας S3 ολοκληρώθηκε με επιτυχία",
+          "backup.error": "Η διαδικασία αντίγραφου ασφαλείας S3 απέτυχε: {{message}}",
+          "autoSync": "Αutόματη συγχρονισμός",
+          "autoSync.off": "Κλειστό",
+          "autoSync.minute": "Κάθε {{count}} λεπτά",
+          "autoSync.hour": "Κάθε {{count}} ώρες",
+          "maxBackups": "Μέγιστος αριθμός αντιγράφων",
+          "maxBackups.unlimited": "Απεριόριστος",
+          "skipBackupFile": "Συρρίκνωση αντίγραφου",
+          "skipBackupFile.help": "Όταν αντιγράφεται, θα παραλειφθεί το περιεχόμενο των αρχείων και θα αντιγραφούν μόνο τα πληροφορίες της διαμόρφωσης, μειώνοντας σημαντικά το μέγεθος του αρχείου αντίγραφου.",
+          "syncStatus": "Κατάσταση συγχρονισμού",
+          "syncStatus.noSync": "Δεν έχει γίνει συγχρονισμός",
+          "syncStatus.error": "Σφάλμα συγχρονισμού: {{message}}",
+          "syncStatus.lastSync": "Τελευταίος συγχρονισμός: {{time}}",
+          "manager.title": "Διαχείριση αντιγράφων S3",
+          "manager.refresh": "Ανανέωση",
+          "manager.delete.selected": "Διαγραφή επιλεγμένων ({{count}})",
+          "manager.close": "Κλείσιμο",
+          "manager.columns.fileName": "Όνομα αρχείου",
+          "manager.columns.modifiedTime": "Χρόνος τροποποίησης",
+          "manager.columns.size": "Μέγεθος αρχείου",
+          "manager.columns.actions": "Ενέργειες",
+          "manager.restore": "Επαναφορά",
+          "manager.delete": "Διαγραφή",
+          "manager.config.incomplete": "Παρακαλώ συμπληρώστε πλήρη στοιχεία διαμόρφωσης S3",
+          "manager.files.fetch.error": "Αποτυχία λήψης λίστας αντιγράφων: {{message}}",
+          "manager.delete.confirm.title": "Επιβεβαίωση διαγραφής",
+          "manager.delete.confirm.multiple": "Είστε βέβαιοι ότι θέλετε να διαγράψετε τα {{count}} επιλεγμένα αντίγραφα; Αυτή η ενέργεια είναι αναστρέψιμη.",
+          "manager.delete.confirm.single": "Είστε βέβαιοι ότι θέλετε να διαγράψετε το αντίγραφο \"{{fileName}}\"; Αυτή η ενέργεια είναι αναστρέψιμη.",
+          "manager.delete.success.multiple": "Η διαγραφή {{count}} αντιγράφων ασφαλείας ολοκληρώθηκε με επιτυχία",
+          "manager.delete.success.single": "Η διαγραφή του αντιγράφου ασφαλείας ολοκληρώθηκε με επιτυχία",
+          "manager.delete.error": "Η διαγραφή του αντιγράφου ασφαλείας απέτυχε: {{message}}",
+          "manager.select.warning": "Παρακαλώ επιλέξτε τα αντίγραφα που θέλετε να διαγραφείτε",
+          "restore.modal.title": "Επαναφορά δεδομένων S3",
+          "restore.modal.select.placeholder": "Παρακαλούμε επιλέξτε το αντίγραφο που θέλετε να επαναφέρετε",
+          "restore.confirm.title": "Επιβεβαίωση επαναφοράς δεδομένων",
+          "restore.confirm.content": "Η επαναφορά των δεδομένων θα αντικαταστήσει όλα τα τρέχοντα δεδομένα. Αυτή η ενέργεια είναι αναστρέψιμη. Είστε βέβαιοι ότι θέλετε να συνεχίσετε;",
+          "restore.confirm.ok": "Επιβεβαίωση επαναφοράς",
+          "restore.confirm.cancel": "Ακύρωση",
+          "restore.success": "Η επαναφορά των δεδομένων ολοκληρώθηκε με επιτυχία",
+          "restore.error": "Η επαναφορά των δεδομένων απέτυχε: {{message}}",
+          "restore.config.incomplete": "Παρακαλώ συμπληρώστε πλήρη στοιχεία διαμόρφωσης S3",
+          "restore.file.required": "Παρακαλούμε επιλέξτε το αρχείο που θέλετε να επαναφέρετε"
+        },
+        "app_data.select": "Αλλαγή καταλόγου",
+        "app_data.select_title": "Αλλαγή καταλόγου εφαρμογής",
+        "app_data.restart_notice": "Η εφαρμογή μπορεί να ξεκινήσει ξανά πολλές φορές για να εφαρμόσει τις αλλαγές",
+        "app_data.copy_data_option": "Αντιγραφή δεδομένων, η αντιγραφή των δεδομένων του προηγούμενου καταλόγου θα γίνει αυτόματα μετά την επανεκκίνηση",
+        "app_data.copy_time_notice": "Η αντιγραφή δεδομένων θα χρειαστεί λίγο χρόνο, μην κλείνετε την εφαρμογή κατά τη διάρκεια της αντιγραφής",
+        "app_data.path_changed_without_copy": "Η διαδρομή αλλάχτηκε επιτυχώς",
+        "app_data.copying_warning": "Η αντιγραφή δεδομένων γίνεται, μην τερματίσετε την εφαρμογή με δύναμη. Η εφαρμογή θα επανεκκινηθεί αυτόματα μετά την ολοκλήρωση της αντιγραφής.",
+        "app_data.copying": "Αντιγραφή δεδομένων στη νέα θέση...",
+        "app_data.copy_success": "Οι δεδομένοι αντιγράφηκαν επιτυχώς στη νέα θέση",
+        "app_data.copy_failed": "Αποτυχία αντιγραφής δεδομένων",
+        "app_data.select_success": "Η καταγωγή δεδομένων άλλαξε, η εφαρμογή θα επανεκκινηθεί για να εφαρμόσει τις αλλαγές",
+        "app_data.select_error": "Αποτυχία αλλαγής καταγωγής δεδομένων",
+        "app_data.migration_title": "Μεταφορά δεδομένων",
+        "app_data.original_path": "Παλιά διαδρομή",
+        "app_data.new_path": "Νέα διαδρομή",
+        "app_data.select_error_root_path": "Η νέα διαδρομή δεν μπορεί να είναι το ρίζα κατάλογος",
+        "app_data.select_error_write_permission": "Η νέα διαδρομή δεν έχει δικαιώματα εγγραφής",
+        "app_data.stop_quit_app_reason": "Η εφαρμογή βρίσκεται τώρα σε διαδικασία μεταφοράς δεδομένων, δεν μπορεί να σταματήσει",
+        "app_data.select_not_empty_dir": "Η νέα διαδρομή δεν είναι κενή",
+        "app_data.select_not_empty_dir_content": "Η νέα διαδρομή δεν είναι κενή. Θα υπάρξει κίνδυνος χαστής δεδομένων ή αποτυχίας αντιγραφής, θέλετε να συνεχίσετε;",
+        "app_data.select_error_same_path": "Η νέα διαδρομή ταυτίζεται με την παλιά διαδρομή, παρακαλώ επιλέξτε άλλη διαδρομή",
+        "app_data.select_error_in_app_path": "Η νέα διαδρομή ταυτίζεται με τη διαδρομή εγκατάστασης της εφαρμογής, παρακαλώ επιλέξτε άλλη διαδρομή",
+        "markdown_export.show_model_name.title": "Χρήση του ονόματος του μοντέλου κατά την εξαγωγή",
+        "markdown_export.show_model_name.help": "Όταν ενεργοποιηθεί, το όνομα του μοντέλου θα εμφανιστεί κατά την εξαγωγή σε Markdown. Προσοχή: Αυτό το πεδίο θα επηρεάσει όλες τις μεθόδους εξαγωγής σε Markdown, όπως το Notion, το Yeuqiu κ.α.",
+        "markdown_export.show_model_provider.title": "Εμφάνιση προμηθευτή μοντέλου",
+        "markdown_export.show_model_provider.help": "Εμφάνιση του προμηθευτή του μοντέλου κατά την εξαγωγή σε Markdown, όπως OpenAI, Gemini κ.α.",
+        "notion.export_reasoning.title": "Εξαγωγή με αιτιολογία",
+        "notion.export_reasoning.help": "Όταν ενεργοποιηθεί, τα κείμενα συλλογισμού θα περιλαμβάνονται κατά την εξαγωγή στο Notion."
       },
       "display.assistant.title": "Ρυθμίσεις Υπηρεσίας",
       "display.custom.css": "Προσαρμοστική CSS",
@@ -1220,7 +1465,8 @@
         "updateSuccess": "Ο διακομιστής ενημερώθηκε επιτυχώς",
         "url": "URL",
         "errors": {
-          "32000": "Η εκκίνηση του MCP απέτυχε. Παρακαλώ ελέγξτε αν όλες οι παράμετροι έχουν συμπληρωθεί σύμφωνα με τον οδηγό."
+          "32000": "Η εκκίνηση του MCP απέτυχε. Παρακαλώ ελέγξτε αν όλες οι παράμετροι έχουν συμπληρωθεί σύμφωνα με τον οδηγό.",
+          "toolNotFound": "Δεν βρέθηκε εργαλείο {{name}}"
         },
         "tabs": {
           "general": "Γενικά",
@@ -1302,7 +1548,19 @@
         "tags": "Ετικέτες",
         "tagsPlaceholder": "Εισάγετε ετικέτες",
         "providerPlaceholder": "Όνομα παρόχου",
-        "advancedSettings": "Προχωρημένες Ρυθμίσεις"
+        "advancedSettings": "Προχωρημένες Ρυθμίσεις",
+        "addServer.create": "Δημιουργία γρήγορα",
+        "addServer.importFrom": "Εισαγωγή από JSON",
+        "addServer.importFrom.tooltip": "Αντιγράψτε τη διαμόρφωση JSON από τη σελίδα παρουσίασης MCP Servers (προτιμώντας τη διαμόρφωση\n NPX ή UVX) και επικολλήστε τη στο πλαίσιο εισαγωγής",
+        "addServer.importFrom.placeholder": "Επικόλληση JSON διαμόρφωσης σέρβερ MCP",
+        "addServer.importFrom.invalid": "Μη έγκυρη είσοδος, παρακαλώ ελέγξτε τη μορφή JSON",
+        "addServer.importFrom.nameExists": "Ο σέρβερ υπάρχει ήδη: {{name}}",
+        "addServer.importFrom.oneServer": "Μπορείτε να αποθηκεύσετε μόνο μια διαμόρφωση σέρβερ MCP τη φορά",
+        "addServer.importFrom.connectionFailed": "Αποτυχία σύνδεσης",
+        "disable": "Δεν χρησιμοποιείτε σέρβερ MCP",
+        "disable.description": "Να μην ενεργοποιείτε τη λειτουργία υπηρεσίας MCP",
+        "noDescriptionAvailable": "Δεν υπάρχει διαθέσιμη περιγραφή",
+        "customRegistryPlaceholder": "Εισάγετε τη διεύθυνση του ιδιωτικού καταλόγου, π.χ. https://npm.company.com"
       },
       "messages.divider": "Διαχωριστική γραμμή μηνυμάτων",
       "messages.divider.tooltip": "Δεν ισχύει για μηνύματα με στυλ φυσαλίδας",
@@ -1437,7 +1695,34 @@
         "basic_auth.user_name.tip": "Αφήστε κενό για να απενεργοποιήσετε",
         "basic_auth.password": "Κωδικός πρόσβασης",
         "bills": "Λογαριασμοί",
-        "no_models_for_check": "Δεν υπάρχουν μοντέλα για έλεγχο (π.χ. μοντέλα συνομιλίας)"
+        "no_models_for_check": "Δεν υπάρχουν μοντέλα για έλεγχο (π.χ. μοντέλα συνομιλίας)",
+        "openai": {
+          "alert": "Ο πάροχος OpenAI δεν υποστηρίζει πλέον το παλιό τρόπο κλήσης. Αν χρησιμοποιείτε τρίτο API, δημιουργήστε έναν νέο πάροχο"
+        },
+        "dmxapi": {
+          "select_platform": "Επιλέξτε πλατφόρμα"
+        },
+        "vertex_ai": {
+          "service_account": {
+            "title": "Ρύθμιση Service Account",
+            "private_key": "Ιδιωτικό Κλειδί",
+            "private_key_placeholder": "Παρακαλώ εισάγετε το ιδιωτικό κλειδί Service Account",
+            "private_key_help": "Το πεδίο private_key από το αρχείο κλειδιού JSON που κατεβάσατε από το Google Cloud Console",
+            "client_email": "Διεύθυνση ηλεκτρονικού ταχυδρομείου πελάτη",
+            "client_email_placeholder": "Παρακαλώ εισάγετε τη διεύθυνση ηλεκτρονικού ταχυδρομείου πελάτη Service Account",
+            "client_email_help": "Το πεδίο client_email από το αρχείο κλειδιού JSON που κατεβάσατε από το Google Cloud Console",
+            "description": "Χρήση Service Account για αυθεντικοποίηση, κατάλληλη για περιβάλλοντα όπου δεν είναι δυνατή η χρήση ADC",
+            "auth_success": "Η αυθεντικοποίηση Service Account ήταν επιτυχής",
+            "incomplete_config": "Παρακαλώ πληρώστε πρώτα την πλήρη ρύθμιση των πληροφοριών Service Account"
+          },
+          "project_id": "ID Προτζέκτ",
+          "project_id_placeholder": "your-google-cloud-project-id",
+          "project_id_help": "Το ID του Google Cloud προτζέκτ σας",
+          "location": "Περιοχή",
+          "location_help": "Η περιοχή της υπηρεσίας Vertex AI, π.χ. us-central1",
+          "documentation": "Δείτε την επίσημη δοκιμαστική για περισσότερες λεπτομέρειες ρύθμισης:",
+          "learn_more": "Μάθετε Περισσότερα"
+        }
       },
       "proxy": {
         "mode": {
@@ -1477,7 +1762,11 @@
         "toggle_show_topics": "Εναλλαγή εμφάνισης θεμάτων",
         "zoom_in": "Μεγέθυνση εμφάνισης",
         "zoom_out": "Σμικρύνση εμφάνισης",
-        "zoom_reset": "Επαναφορά εμφάνισης"
+        "zoom_reset": "Επαναφορά εμφάνισης",
+        "exit_fullscreen": "Έξοδος από ολόκληρη οθόνη",
+        "selection_assistant_toggle": "Ενεργοποίηση/Απενεργοποίηση του Ερμηνευτή Επιλογής",
+        "selection_assistant_select_text": "Ερμηνευτής επιλογής: Επιλογή λέξης",
+        "search_message_in_chat": "Αναζήτηση μηνύματος στη συνομιλία"
       },
       "theme.system": "Σύστημα",
       "theme.dark": "Σκοτεινό",
@@ -1527,8 +1816,33 @@
         "subscribe_delete": "Διαγραφή συνδρομής",
         "apikey": "Κλειδί API",
         "free": "Δωρεάν",
-        "content_limit": "Περιορισμός μήκους περιεχομένου",
-        "content_limit_tooltip": "Περιορίζει το μήκος του περιεχομένου των αποτελεσμάτων αναζήτησης, το περιεχόμενο πέρα από το όριο θα περικόπτεται"
+        "compression": {
+          "info": {
+            "dimensions_auto_success": "Τα διαστήματα αυτόματα αποκτήθηκαν επιτυχώς, τα διαστήματα είναι {{dimensions}}"
+          },
+          "error": {
+            "embedding_model_required": "Παρακαλώ επιλέξτε πρώτα ένα μοντέλο εμφύτευσης",
+            "dimensions_auto_failed": "Αποτυχία αutόματης ανάκτησης διαστάσεων",
+            "provider_not_found": "Δεν βρέθηκε πάροχος",
+            "rag_failed": "Αποτυχία RAG"
+          },
+          "title": "Συμπίεση αποτελεσμάτων αναζήτησης",
+          "method": "Μέθοδος συμπίεσης",
+          "method.none": "Χωρίς συμπίεση",
+          "method.cutoff": "Κοπή",
+          "cutoff.limit": "Όριο κοπής",
+          "cutoff.limit.placeholder": "Εισάγετε το μήκος",
+          "cutoff.limit.tooltip": "Περιορίζει το μήκος του περιεχομένου των αποτελεσμάτων αναζήτησης, το οποίο υπερβαίνει το όριο θα κοπεί (π.χ. 2000 χαρακτήρες)",
+          "cutoff.unit.char": "Χαρακτήρες",
+          "cutoff.unit.token": "Token",
+          "method.rag": "RAG",
+          "rag.document_count": "Αριθμός εγγράφων",
+          "rag.document_count.default": "Προεπιλογή",
+          "rag.document_count.tooltip": "Προσδοκώμενος αριθμός εγγράφων που θα εξαχθούν από κάθε αποτέλεσμα αναζήτησης, ο συνολικός αριθμός εξαγωγής είναι ο αριθμός αυτός πολλαπλασιασμένος με τον αριθμό των αποτελεσμάτων αναζήτησης.",
+          "rag.embedding_dimensions.auto_get": "Αυτόματη ανάκτηση διαστάσεων",
+          "rag.embedding_dimensions.placeholder": "Δεν ορίσετε διαστάσεις",
+          "rag.embedding_dimensions.tooltip": "Αφήστε το κενό για να μην προσφέρετε το παράμετρο dimensions"
+        }
       },
       "miniapps": {
         "open_link_external": {
@@ -1618,7 +1932,57 @@
       "messages.math_engine.none": "Κανένα",
       "models.manage.add_listed": "Προσθήκη μοντέλων από τη λίστα",
       "models.manage.remove_listed": "Αφαίρεση μοντέλων από τη λίστα",
-      "zoom.title": "Μεγέθυνση σελίδας"
+      "notification": {
+        "title": "Ρυθμίσεις Ειδοποιήσεων",
+        "assistant": "Μήνυμα Ανθρωποειδούς",
+        "backup": "Αντιγραφή Ασφαλείας",
+        "knowledge_embed": "Εμφύτευση Γνώσης"
+      },
+      "zoom": {
+        "title": "Κλιμάκωση",
+        "reset": "Επαναφορά"
+      },
+      "openai": {
+        "title": "Ρυθμίσεις OpenAI",
+        "summary_text_mode.title": "Λειτουργία Συνοψίας",
+        "summary_text_mode.tip": "Σύνοψη συλλογισμού του μοντέλου",
+        "summary_text_mode.auto": "Αυτόματο",
+        "summary_text_mode.concise": "Σύντομο",
+        "summary_text_mode.detailed": "Λεπτομερές",
+        "summary_text_mode.off": "Απενεργοποιημένο",
+        "service_tier.title": "Επίπεδο Υπηρεσίας",
+        "service_tier.tip": "Ορίστε το επίπεδο καθυστέρησης που χρησιμοποιείται για την επεργασία αιτημάτων",
+        "service_tier.auto": "Αυτόματο",
+        "service_tier.default": "Προκαθορισμένο",
+        "service_tier.flex": "Ευέλικτο"
+      },
+      "about.debug.title": "Πίνακας αποσφαλμάτωσης",
+      "about.debug.open": "Ανοίξτε",
+      "general.test_plan.title": "Σχέδιο δοκιμών",
+      "general.test_plan.tooltip": "Συμμετοχή σε σχέδιο δοκιμών μπορεί να σας επιτρέψει να εμπειριματιστείτε πιο γρήγορα τις νέες λειτουργίες, αλλά μπορεί να προκαλέσει περισσότερους κινδύνους. Προτείνεται να κάνετε αντιγραφή αποθήκευσης εκ των προτέρων.",
+      "general.test_plan.beta_version": "Προσωρινή έκδοση (Beta)",
+      "general.test_plan.beta_version_tooltip": "Οι λειτουργίες μπορεί να αλλάξουν οποιαδήποτε στιγμή, υπάρχουν περισσότερα λάθη και οι ενημερώσεις είναι συχνές",
+      "general.test_plan.rc_version": "Προβολή έκδοσης (RC)",
+      "general.test_plan.rc_version_tooltip": "Είναι πολύ πλησίον στην πραγματική έκδοση, τα προγράμματα είναι σταθερά και οι πιθανότητες λαθών είναι χαμηλότερες",
+      "general.test_plan.version_options": "Επιλογή έκδοσης",
+      "general.test_plan.version_channel_not_match": "Η αλλαγή μεταξύ της έκδοσης RC και Beta θα εφαρμοστεί με την επόμενη επίσημη έκδοση.",
+      "general.spell_check": "Έλεγχος ορθογραφίας",
+      "general.spell_check.languages": "Γλώσσα έλεγχου ορθογραφίας",
+      "messages.tokens": "Προβολή χρήσης tokens",
+      "models.add.model_id.select.placeholder": "Επιλέξτε μοντέλο",
+      "models.add.model_name.tooltip": "Για παράδειγμα GPT-4",
+      "models.check.model_status_failed": "{{count}} μοντέλα πλήρως απρόσβαση",
+      "models.check.model_status_partial": "Από αυτά τα {{count}} μοντέλα, τα περισσότερα δεν είναι προσβάσιμα με ορισμένα κλειδιά",
+      "models.check.model_status_passed": "{{count}} μοντέλα πέρασαν τον έλεγχο υγείας",
+      "models.check.disclaimer": "Ο έλεγχος υγείας απαιτεί αποστολή αιτήματος. Χρησιμοποιείστε προσεκτικά. Τα μοντέλα που χρεώνονται ανά χρήση μπορεί να δημιουργήσουν περισσότερα έξοδα. Προσωπικά φροντίστε.",
+      "models.quick_assistant_model": "Γρήγορο μοντέλο βοηθού",
+      "models.quick_assistant_model_description": "Το προκαθορισμένο μοντέλο που χρησιμοποιείται από τον γρήγορο βοηθό",
+      "models.quick_assistant_selection": "Επιλογή βοηθού",
+      "models.quick_assistant_default_tag": "Προκαθορισμένος",
+      "models.use_model": "Προκαθορισμένο μοντέλο",
+      "models.use_assistant": "Χρήση βοηθού",
+      "theme.color_primary": "Κύριο χρώμα θέματος",
+      "topic.pin_to_top": "Σταθερό θέμα στην κορυφή"
     },
     "translate": {
       "any.language": " οποιαδήποτε γλώσσα",
@@ -1640,13 +2004,29 @@
       "input.placeholder": "Εισαγάγετε κείμενο για μετάφραση",
       "output.placeholder": "Μετάφραση",
       "processing": "Μεταφράζεται...",
-      "scroll_sync.disable": "Απενεργοποίηση συγχρονισμού οριζόντιου μετακινήσεων",
-      "scroll_sync.enable": "Ενεργοποίηση συγχρονισμού οριζόντιου μετακινήσεων",
       "title": "Μετάφραση",
       "tooltip.newline": "Αλλαγή γραμμής",
       "menu": {
         "description": "Μεταφράστε το περιεχόμενο του τρέχοντος πεδίου εισαγωγής"
-      }
+      },
+      "settings": {
+        "title": "Ρύθμιση μετάφρασης",
+        "model": "Ρύθμιση μοντέλου",
+        "model_desc": "Το μοντέλο που χρησιμοποιείται από την υπηρεσία μετάφρασης",
+        "bidirectional": "Ρύθμιση διπλής μετάφρασης",
+        "bidirectional_tip": "Μετά την ενεργοποίηση, υποστηρίζεται μόνο διπλή μετάφραση μεταξύ της γλώσσας πηγής και της γλώσσας προορισμού",
+        "scroll_sync": "Ρύθμιση συγχρονισμού κύλισης",
+        "preview": "Προεπισκόπηση Markdown"
+      },
+      "target_language": "Στόχος γλώσσας",
+      "alter_language": "Δευτερεύουσα γλώσσα",
+      "closed": "Η μετάφραση έχει κλειστεί",
+      "copied": "Η μετάφραση έχει αντιγραφεί",
+      "empty": "Η μετάφραση είναι κενή",
+      "not.found": "Δεν βρέθηκε μετάφραση",
+      "language.same": "Η γλώσσα πηγής και η στόχος είναι ίδιες",
+      "language.not_pair": "Η γλώσσα πηγής διαφέρει από την γλώσσα που έχει ρυθμιστεί",
+      "detected.language": "Αυτόματη ανίχνευση γλώσσας"
     },
     "tray": {
       "quit": "Έξοδος",
@@ -1665,6 +2045,179 @@
       "later": "Μετά",
       "install": "Εγκατάσταση",
       "noReleaseNotes": "Χωρίς σημειώσεις"
+    },
+    "notification": {
+      "assistant": "Απόκριση του βοηθού",
+      "knowledge.success": "Επιτυχής προσθήκη {{type}} στη βάση γνώσεων",
+      "knowledge.error": "Αποτυχία προσθήκης {{type}} στη βάση γνώσεων: {{error}}"
+    },
+    "selection": {
+      "action": {
+        "builtin": {
+          "translate": "Μετάφραση",
+          "explain": "Εξήγηση",
+          "summary": "Σύνοψη",
+          "search": "Αναζήτηση",
+          "refine": "Βελτίωση",
+          "copy": "Αντιγραφή",
+          "quote": "Παραπομπή"
+        },
+        "window": {
+          "pin": "Σταθερό",
+          "pinned": "Έχει σταθεροποιηθεί",
+          "opacity": "Διαφανές παράθυρο",
+          "original_show": "Προβολή αρχικού κειμένου",
+          "original_hide": "Απόκρυψη αρχικού κειμένου",
+          "original_copy": "Αντιγραφή αρχικού κειμένου",
+          "esc_close": "Πατήστε Esc για κλείσιμο",
+          "esc_stop": "Πατήστε Esc για στάση",
+          "c_copy": "C προσαρμογή",
+          "r_regenerate": "R Αναπαραγωγή"
+        },
+        "translate": {
+          "smart_translate_tips": "Έξυπνη μετάφραση: Το περιεχόμενο θα μεταφραστεί πρώτα στην στόχο γλώσσα· Εάν το περιεχόμενο είναι ήδη στην στόχο γλώσσα, θα μεταφραστεί στην εναλλακτική γλώσσα"
+        }
+      },
+      "settings": {
+        "enable": {
+          "title": "Ενεργοποίηση",
+          "description": "Ενδιάμεσα υποστηρίζει μόνο το λειτουργικό σύστημα Windows"
+        },
+        "toolbar": {
+          "trigger_mode": {
+            "title": "Τρόπος επιλογής λέξεων",
+            "description": "Ο τρόπος ενεργοποίησης της επιλογής λέξεων και εμφάνισης της γραμμής εργαλείων μετά την επιλογή",
+            "description_note": "Λίγες εφαρμογές δεν υποστηρίζουν την επιλογή λέξεων με το πλήκτρο Ctrl. Εάν χρησιμοποιείτε εργαλεία όπως το AHK για να ξαναχαρακτηρίσετε το πλήκτρο Ctrl, μπορεί να προκύψει πρόβλημα με την επιλογή λέξεων σε ορισμένες εφαρμογές.",
+            "selected": "Επιλογή λέξεων",
+            "selected_note": "Η γραμμή εργαλείων εμφανίζεται αμέσως μετά την επιλογή λέξεων",
+            "ctrlkey": "Πλήκτρο Ctrl",
+            "ctrlkey_note": "Η γραμμή εργαλείων εμφανίζεται μετά την επιλογή λέξεων και την παρατεταμένη πίεση του πλήκτρου Ctrl",
+            "shortcut": "Συντόμευση",
+            "shortcut_note": "Χρησιμοποιήστε τη συντόμευση για να εμφανίσετε τη γραμμή εργαλείων μετά την επιλογή λέξεων. Παρακαλώ ρυθμίστε τη συντόμευση επιλογής λέξεων και ενεργοποιήστε τη στη σελίδα ρυθμίσεων συντομεύσεων.",
+            "shortcut_link": "Πήγαινε στις ρυθμίσεις συντομεύσεων"
+          },
+          "compact_mode": {
+            "title": "Συμπαγής λειτουργία",
+            "description": "Στη συμπαγή λειτουργία, εμφανίζονται μόνο τα εικονίδια και όχι τα κείμενα"
+          },
+          "title": "Πανελια εργαλείων"
+        },
+        "window": {
+          "follow_toolbar": {
+            "title": "Παρακολούθηση μπάρας εργαλείων",
+            "description": "Η θέση του παραθύρου θα παρακολουθεί τη μπάρα εργαλείων, μετά την απενεργοποίηση θα παραμένει πάντα στη μέση"
+          },
+          "remember_size": {
+            "title": "Θυμηθείτε το μέγεθος",
+            "description": "Κατά τη διάρκεια εκτέλεσης της εφαρμογής, το παράθυρο θα εμφανιστεί με το τελευταίο ρυθμισμένο μέγεθος"
+          },
+          "auto_close": {
+            "title": "Αυτόματος κλεισιμος",
+            "description": "Ο παράθυρος θα κλείσει αυτόματα όταν δεν είναι στην κορυφή και χάσει την εστίαση"
+          },
+          "auto_pin": {
+            "title": "Αυτόματη θέση στην κορυφή",
+            "description": "Προκαθορισμένα το παράθυρο θα τοποθετηθεί στην κορυφή"
+          },
+          "opacity": {
+            "title": "Διαφάνεια",
+            "description": "Ρυθμίστε την προεπιλεγμένη διαφάνεια του παραθύρου, 100% είναι πλήρως αδιαφανές"
+          },
+          "title": "Παράθυρο λειτουργιών"
+        },
+        "actions": {
+          "reset": {
+            "button": "Επαναφορά",
+            "tooltip": "Επαναφορά στις προεπιλεγμένες λειτουργίες, οι προσαρμοσμένες λειτουργίες δεν διαγράφονται",
+            "confirm": "Είστε βέβαιοι ότι θέλετε να επαναφέρετε στις προεπιλεγμένες λειτουργίες; Οι προσαρμοσμένες λειτουργίες δεν διαγράφονται."
+          },
+          "add_tooltip": {
+            "enabled": "Προσθήκη προσαρμοσμένων λειτουργιών",
+            "disabled": "Η προσαρμοσμένη λειτουργία έχει φθάσει στο όριο ({{max}} τεμάχια)"
+          },
+          "title": "Λειτουργία",
+          "custom": "Προσαρμοσμένη λειτουργία",
+          "delete_confirm": "Είστε σίγουροι ότι θέλετε να διαγράψετε αυτή την προσαρμοσμένη λειτουργία;",
+          "drag_hint": "Σύρετε για ταξινόμηση, μετακινήστε στην κορυφή για να ενεργοποιήσετε τη λειτουργία ({{enabled}}/{{max}})}"
+        },
+        "advanced": {
+          "filter_mode": {
+            "title": "Εφαρμογή φίλτρου",
+            "description": "Μπορείτε να περιορίσετε τον χρήστη στο συγκεκριμένο λογισμικό να ενεργοποιηθεί (λίστα επιτροπής) ή να μην ενεργοποιηθεί (λίστα απαγόρευσης)",
+            "default": "Κλειστό",
+            "whitelist": "Λίστα επιτροπής",
+            "blacklist": "Λίστα απαγόρευσης"
+          },
+          "filter_list": {
+            "title": "Λίστα φιλτραρίσματος",
+            "description": "Προηγμένη λειτουργία, συνιστάται για χρήστες με εμπειρία, πριν τη ρύθμιση πρέπει να γνωρίζετε την αντίστοιχη ρύθμιση"
+          },
+          "title": "Προχωρημένο"
+        },
+        "user_modal": {
+          "title": {
+            "add": "Προσθήκη προσαρμοσμένης λειτουργίας",
+            "edit": "Επεξεργασία προσαρμοσμένης λειτουργίας"
+          },
+          "name": {
+            "label": "Όνομα",
+            "hint": "Παρακαλώ εισάγετε το όνομα της λειτουργίας"
+          },
+          "icon": {
+            "label": "Εικονίδιο",
+            "placeholder": "Εισαγάγετε το όνομα του εικονιδίου Lucide",
+            "error": "Μη έγκυρο όνομα εικονιδίου, παρακαλώ ελέγξτε την είσοδο",
+            "tooltip": "Τα ονόματα εικονιδίων Lucide είναι μικρά γράμματα, όπως το arrow-right",
+            "view_all": "Προβολή όλων των εικονιδίων",
+            "random": "Τυχαίο εικονίδιο"
+          },
+          "model": {
+            "label": "Μοντέλο",
+            "tooltip": "Χρήση βοηθού: Χρησιμοποιεί ταυτόχρονα το μήνυμα συστήματος του βοηθού και τις παραμέτρους του μοντέλου",
+            "default": "Προεπιλεγμένο μοντέλο",
+            "assistant": "Χρήση βοηθού"
+          },
+          "assistant": {
+            "label": "Επιλέξτε Βοηθό",
+            "default": "Προκαθορισμένο"
+          },
+          "prompt": {
+            "label": "Προτροπή χρήστη (Prompt)",
+            "tooltip": "Προτροπή του χρήστη, ως προσθήκη στην είσοδο του χρήστη, δεν αντικαθιστά την προτροπή του συστήματος του βοηθού",
+            "placeholder": "Χρησιμοποιήστε το πλασματικό {{text}} για να αντιπροσωπεύει το επιλεγμένο κείμενο, όταν δεν εισάγεται το επιλεγμένο κείμενο προστίθεται στο τέλος αυτής της προτροπής",
+            "placeholder_text": "Πλασματικό",
+            "copy_placeholder": "Αντιγραφή πλασματικού"
+          }
+        },
+        "search_modal": {
+          "engine": {
+            "label": "Μηχανή αναζήτησης",
+            "custom": "Προσαρμοσμένο"
+          },
+          "custom": {
+            "name": {
+              "label": "Προσαρμοσμένο όνομα",
+              "hint": "Εισαγάγετε το όνομα του μηχανήματος αναζήτησης",
+              "max_length": "Το όνομα δεν μπορεί να ξεπεράσει τα 16 χαρακτήρες"
+            },
+            "url": {
+              "label": "Προσαρμοσμένος διαδικτυακός τόπος αναζήτησης",
+              "hint": "Χρησιμοποιήστε {{queryString}} για να αντικαταστήσετε την ερώτηση αναζήτησης",
+              "required": "Παρακαλώ εισάγετε το URL αναζήτησης",
+              "invalid_format": "Παρακαλώ εισάγετε έγκυρο URL που ξεκινά με http:// ή https://",
+              "missing_placeholder": "Το URL πρέπει να περιέχει το προσθήκη {{queryString}}"
+            },
+            "test": "Δοκιμή"
+          },
+          "title": "Ρύθμιση αναζητητή"
+        },
+        "filter_modal": {
+          "title": "Εφαρμογή φάκελου επιλογής",
+          "user_tips": "Παρακαλώ εισάγετε το όνομα του αρχείου εκτέλεσης της εφαρμογής, ένα ανά γραμμή, χωρίς να διακρίνετε πεζά και κεφαλαία, μπορεί να είναι ασαφές. Για παράδειγμα: chrome.exe, weixin.exe, Cherry Studio.exe κλπ."
+        },
+        "experimental": "Πειραματική λειτουργία"
+      },
+      "name": "Πρόσθετο για περικοπή"
     }
   }
 }
